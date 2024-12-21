@@ -1,7 +1,7 @@
 ---
-id: org.apache.streampipes.connect.adapters.slack
-title: Slack
-sidebar_label: Slack
+id: org.apache.streampipes.connectors.ros.sink
+title: ROS Bridge Sink
+sidebar_label: ROS Bridge Sink
 ---
 
 <!--
@@ -25,15 +25,36 @@ sidebar_label: Slack
 
 
 <p align="center"> 
-    <img src="/img/pipeline-elements/org.apache.streampipes.connect.adapters.slack/icon.png" width="150px;" class="pe-image-documentation"/>
+    <img src="/img/pipeline-elements/org.apache.streampipes.connectors.ros.sink/icon.png" width="150px;" class="pe-image-documentation"/>
 </p>
 
 ***
 
 ## Description
 
-Subscribes to a Slack channel
+This data sinks can publish events to ROS over websocket.
 
 
 ***
+
+## Required input
+
+User-defined parameters include the hostname of the ROS bridge, the port of the ROS instance and the topic.
+
+## Configuration
+
+Describe the configuration parameters here
+
+### Ros Bridge
+
+Example: test-server.com (No protocol)
+
+### Port
+
+The port of the ROS instance.
+
+### Topic
+
+Example: /battery (Starts with /)
+
 
