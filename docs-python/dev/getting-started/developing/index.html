@@ -40,8 +40,8 @@
         <link rel="next" href="../quickstart/">
       
       
-      <link rel="icon" href="https://streampipes.apache.org/img/favicon/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <link rel="icon" href="https://streampipes.apache.org/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.2">
     
     
       
@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
@@ -236,6 +236,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -647,6 +649,10 @@
       
         
       
+        
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -746,6 +752,46 @@
   
   <span class="md-ellipsis">
     Using Online Machine Learning on a StreamPipes data stream
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/5-applying-interoperable-machine-learning-in-streampipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applying Interoperable Machine Learning in StreamPipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/6-streampipes-function-output-stream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating Output Streams with StreamPipes Functions
   </span>
   
 
@@ -2309,6 +2355,11 @@
                   
 
   
+    <a href="https://github.com/apache/streampipes/blob/dev/streampipes-client-python/docs/getting-started/developing.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
   
 
 
@@ -2337,7 +2388,7 @@
 <br></p>
 <h3 id="first-steps">🚀 First Steps<a class="headerlink" href="#first-steps" title="Permanent link">&para;</a></h3>
 <p>1) <strong>Set up your Python environment</strong></p>
-<p>Create a virtual Python environment using a tool of your choice. 
+<p>Create a virtual Python environment using a tool of your choice.
 To manage dependencies, we use <a href="https://python-poetry.org/">Poetry</a>, so please install poetry in your local environment, e.g. via
 <div class="language-bash highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>poetry
 </code></pre></div></p>
@@ -2350,7 +2401,7 @@ poetry<span class="w"> </span>install<span class="w"> </span>--with<span class="
 <p>2) <strong>Install pre-commit hook</strong></p>
 <p>The pre-commit hook is run before every commit and takes care about code style,
 linting, type hints, import sorting, etc. It will stop your commit in case the changes do not apply the expected format.
-Always check to have the recent version of the pre-commit hook installed otherwise the CI build might fail. 
+Always check to have the recent version of the pre-commit hook installed otherwise the CI build might fail.
 If you are interested, you can have a deeper look on the underlying library: <a href="https://pre-commit.com/">pre-commit</a>.</p>
 <p><div class="language-bash highlight"><pre><span></span><code>pre-commit<span class="w"> </span>install
 </code></pre></div>
@@ -2366,7 +2417,7 @@ Please stick to the <code>numpy</code> <a href="https://numpydoc.readthedocs.io/
 <p>2) <strong>Provide tests</strong> ✅ <br>
 We are aiming for broad test coverage for the Python package and
 have therefore set a requirement of at least 90% unit test coverage.
-Therefore, please remember to write (unit) tests already during development. 
+Therefore, please remember to write (unit) tests already during development.
 If you have problems with writing tests, don't hesitate to ask us for help directly in the PR or
 even before that via our mailing list (see above).</p>
 <!---
@@ -2410,7 +2461,7 @@ To pre-view your local version of the documentation, you can use the following c
 <p>Stay tuned!</p>
 <hr />
 <h2 id="contributing">👨‍💻 Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
-<p><em>Before opening a pull request</em>, review the <a href="https://streampipes.apache.org/getinvolved.html">Get Involved</a> page.
+<p><em>Before opening a pull request</em>, review the <a href="https://streampipes.apache.org/community/get-involved/">Get Involved</a> page.
 It lists information that is required for contributing to StreamPipes.</p>
 <p>When you contribute code, you affirm that the contribution is your original work and that you
 license the work to the project under the project's open source license. Whether or not you
@@ -2418,6 +2469,17 @@ state this explicitly, by submitting any copyrighted material via pull request, 
 other means you agree to license the material under the project's open source license and
 warrant that you have the legal authority to do so.</p>
 <hr />
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 20, 2024</span>
+      
+    
+  </small>
+</div>
 
 
   
@@ -2476,7 +2538,7 @@ warrant that you have the legal authority to do so.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking", "search.suggest"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>

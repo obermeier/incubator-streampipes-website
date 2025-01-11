@@ -38,8 +38,8 @@
         <link rel="next" href="getting-started/first-steps/">
       
       
-      <link rel="icon" href="https://streampipes.apache.org/img/favicon/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <link rel="icon" href="https://streampipes.apache.org/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.2">
     
     
       
@@ -47,7 +47,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.30068a00.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.85d0ee34.min.css">
@@ -234,6 +234,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -595,6 +597,10 @@
       
         
       
+        
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -694,6 +700,46 @@
   
   <span class="md-ellipsis">
     Using Online Machine Learning on a StreamPipes data stream
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/5-applying-interoperable-machine-learning-in-streampipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applying Interoperable Machine Learning in StreamPipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/6-streampipes-function-output-stream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating Output Streams with StreamPipes Functions
   </span>
   
 
@@ -2209,6 +2255,11 @@
                   
 
   
+    <a href="https://github.com/apache/streampipes/blob/dev/streampipes-client-python/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
   
 
 
@@ -2235,30 +2286,13 @@
 <p><img alt="StreamPipes Logo with Python" src="img/streampipes-python.png#only-light" />
 <img alt="StreamPipes Logo with Python" src="img/streampipes-python-dark.png#only-dark" /></p>
 <h4 align="center"><a href="https://github.com/apache/streampipes">StreamPipes</a> is a self-service (Industrial) IoT toolbox to enable non-technical users to connect, analyze and explore IoT data streams.</h4>
-<p><br></p>
-<div class="admonition danger">
-<p class="admonition-title">Dependency issue with StreamPipes Python 0.92.0</p>
-<p>In StreamPipes Python <code>0.92.0</code> there is a problem with the required dependencies.<br>
-Pydantic has recently released the new version <code>2.0</code> with many exciting improvements, but also some breaking changes. 
-Unfortunately, we didn't limit our requirements strictly enough, so yydantic <code>2.0</code> is installed together with streampipes, which is not (yet) compatible.<br>
-To fix this bug, simply run the following command after installing streampipes, or adjust your dependencies accordingly:</p>
-<div class="language-python highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="s2">&quot;pydantic&lt;2.0&quot;</span> <span class="s2">&quot;pydantic_core&lt;2.0&quot;</span>
-</code></pre></div>
-</div>
-<p><br></p>
+
 <h3 align="center">Apache StreamPipes for Python 🐍</h3>
 
 <p align="center"> Apache StreamPipes meets Python! We are working highly motivated on a Python library to interact with StreamPipes.
 In this way, we would like to unite the power of StreamPipes to easily connect to and read from different data sources, especially in the IoT domain,
 and the amazing universe of data analytics libraries in Python. </p>
 
-<hr />
-<p><br></p>
-<div class="admonition warning">
-<p class="admonition-title">StreamPipes Python is in beta</p>
-<p>The current version of this Python library is still a beta version.<br>
-This means that it is still heavily under development, which may result in frequent and extensive API changes, unstable behavior, etc.</p>
-</div>
 <hr />
 <h2 id="quickstart">⚡️ Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
 <p>As a quick example, we demonstrate how to set up and configure a StreamPipes client.
@@ -2313,6 +2347,17 @@ This requires to set the following environment variables: <code>SP_API_KEY</code
 <br></p>
 <p><img alt="Howto API Key" src="img/how-to-get-api-key.gif" /></p>
 </details>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 3, 2024</span>
+      
+    
+  </small>
+</div>
 
 
   
@@ -2371,7 +2416,7 @@ This requires to set the following environment variables: <code>SP_API_KEY</code
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking"], "search": "assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": ["content.action.edit", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking", "search.suggest"], "search": "assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="assets/javascripts/bundle.dff1b7c8.min.js"></script>

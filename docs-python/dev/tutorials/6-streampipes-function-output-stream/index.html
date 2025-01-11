@@ -31,13 +31,13 @@
         <meta name="author" content="Apache Software Foundation (ASF)">
       
       
-        <link rel="canonical" href="https://streampipes.apache.org/docs/docs/python/latest/latest/tutorials/1-introduction-to-streampipes-python-client/">
+        <link rel="canonical" href="https://streampipes.apache.org/docs/docs/python/latest/latest/tutorials/6-streampipes-function-output-stream/">
       
       
-        <link rel="prev" href="../../getting-started/quickstart/">
+        <link rel="prev" href="../5-applying-interoperable-machine-learning-in-streampipes/">
       
       
-        <link rel="next" href="../2-extracting-data-from-the-streampipes-data-lake/">
+        <link rel="next" href="../../reference/client/client/">
       
       
       <link rel="icon" href="https://streampipes.apache.org/img/favicon.png">
@@ -45,7 +45,7 @@
     
     
       
-        <title>Introduction to StreamPipes Python - Apache StreamPipes Python</title>
+        <title>Creating Output Streams with StreamPipes Functions - Apache StreamPipes Python</title>
       
     
     
@@ -140,7 +140,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-streampipes-python" class="md-skip">
+        <a href="#creating-output-streams-with-streampipes-functions" class="md-skip">
           Skip to content
         </a>
       
@@ -179,7 +179,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to StreamPipes Python
+              Creating Output Streams with StreamPipes Functions
             
           </span>
         </div>
@@ -320,7 +320,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../1-introduction-to-streampipes-python-client/" class="md-tabs__link">
           
   
     
@@ -594,29 +594,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introduction to StreamPipes Python
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../1-introduction-to-streampipes-python-client/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -625,54 +605,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#why-there-is-an-extra-python-library-for-streampipes" class="md-nav__link">
-    Why there is an extra Python library for StreamPipes?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-install-streampipes-python" class="md-nav__link">
-    How to install StreamPipes Python?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-prepare-the-tutorials" class="md-nav__link">
-    How to prepare the tutorials
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-configure-the-python-client" class="md-nav__link">
-    How to configure the Python client
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -762,9 +694,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../6-streampipes-function-output-stream/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Creating Output Streams with StreamPipes Functions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -773,6 +725,54 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#connecting-to-your-streampipes-instance" class="md-nav__link">
+    Connecting to your StreamPipes instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-output-stream" class="md-nav__link">
+    Creating an output stream
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-the-streampipes-function" class="md-nav__link">
+    Creating the StreamPipes Function
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#instantiating-and-starting-the-function" class="md-nav__link">
+    Instantiating and starting the function
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2265,29 +2265,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#why-there-is-an-extra-python-library-for-streampipes" class="md-nav__link">
-    Why there is an extra Python library for StreamPipes?
+  <a href="#connecting-to-your-streampipes-instance" class="md-nav__link">
+    Connecting to your StreamPipes instance
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-install-streampipes-python" class="md-nav__link">
-    How to install StreamPipes Python?
+  <a href="#creating-an-output-stream" class="md-nav__link">
+    Creating an output stream
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-prepare-the-tutorials" class="md-nav__link">
-    How to prepare the tutorials
+  <a href="#creating-the-streampipes-function" class="md-nav__link">
+    Creating the StreamPipes Function
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-configure-the-python-client" class="md-nav__link">
-    How to configure the Python client
+  <a href="#instantiating-and-starting-the-function" class="md-nav__link">
+    Instantiating and starting the function
   </a>
   
 </li>
@@ -2307,7 +2307,7 @@
                   
 
   
-    <a href="https://github.com/apache/streampipes/blob/dev/streampipes-client-python/docs/tutorials/1-introduction-to-streampipes-python-client.ipynb" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/apache/streampipes/blob/dev/streampipes-client-python/docs/tutorials/6-streampipes-function-output-stream.ipynb" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -3342,17 +3342,33 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Introduction-to-StreamPipes-Python">Introduction to StreamPipes Python<a class="anchor-link" href="#Introduction-to-StreamPipes-Python">¶</a></h1><h3 id="Why-there-is-an-extra-Python-library-for-StreamPipes?">Why there is an extra Python library for StreamPipes?<a class="anchor-link" href="#Why-there-is-an-extra-Python-library-for-StreamPipes?">¶</a></h3><p><a href="https://streampipes.apache.org/">Apache StreamPipes</a> aims to enable non-technical users to connect and analyze IoT data streams.
-To achieve this, it provides an easy-to-use and convenient user interface that allows one to connect to an IoT data source and create some visual
-graphs within a few minutes. <br/>
-While this is the primary use case for Apache StreamPipes, it also offers significant value to those interested in data analysis or data science with IoT data, without the need to handle the complexities of extracting data from devices in a suitable format.
-In this scenario, StreamPipes helps you connect to your data source and extract the data for you.
-You then can make the data available outside StreamPipes by writing it into an external source, such as a database, Kafka, etc.
-While this requires another component, you can also extract your data directly from StreamPipes programmatically using the StreamPipes API.
-For convenience, we also provide you with a StreamPipes client both available for Java and Python.
-Specifically with StreamPipes Python, we want to address the amazing data analytics and data science community in Python and benefit from the great universe of Python libraries out there.</p>
-<br/>
-<h3 id="How-to-install-StreamPipes-Python?">How to install StreamPipes Python?<a class="anchor-link" href="#How-to-install-StreamPipes-Python?">¶</a></h3><p>Simply use the following <code>pip</code> command:</p>
+<h1 id="Creating-Output-Streams-with-StreamPipes-Functions">Creating Output Streams with StreamPipes Functions<a class="anchor-link" href="#Creating-Output-Streams-with-StreamPipes-Functions">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>A StreamPipes Function is a practical tool to help you receive and send live data from and to your StreamPipes instance. This tutorial provides sample code for creating a StreamPipes Function that defines an output stream so you can get started right away by following the below steps.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="Connecting-to-your-StreamPipes-instance">Connecting to your StreamPipes instance<a class="anchor-link" href="#Connecting-to-your-StreamPipes-instance">¶</a></h2><p>In order to receive and send live data from and to StreamPipes you will first have to connect to your instance by creating a StreamPipes Client by following the usual procedure. In this case we will be connecting to a local instance using Kafka. If you haven't already, you will need to open the kafka port manually inside the docker compose file by adding the following The following port mapping inside the <code>kafka</code> node:</p>
+<pre><code class="language-yml">yml
+ports:
+  - "9094:9094"
+</code></pre>
 </div>
 </div>
 </div>
@@ -3362,7 +3378,7 @@ Specifically with StreamPipes Python, we want to address the amazing data analyt
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-1">
@@ -3375,33 +3391,29 @@ Specifically with StreamPipes Python, we want to address the amazing data analyt
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%</span><span class="n">pip</span> <span class="n">install</span> <span class="n">streampipes</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"BROKER-HOST"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"localhost"</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"KAFKA-PORT"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"9094"</span>
+<span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"TOKEN"</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-1">%pip install streampipes
+<div class="clipboard-copy-txt" id="cell-1">import os
+
+os.environ["BROKER-HOST"] = "localhost"
+os.environ["KAFKA-PORT"] = "9094"
+api_key = os.environ.get("TOKEN")</div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>If you want to have the current development state you can also execute:</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-2">
@@ -3414,10 +3426,44 @@ Specifically with StreamPipes Python, we want to address the amazing data analyt
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%</span><span class="n">pip</span> <span class="n">install</span> <span class="n">git</span><span class="o">+</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">apache</span><span class="o">/</span><span class="n">streampipes</span><span class="o">.</span><span class="n">git</span><span class="c1">#subdirectory=streampipes-client-python</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">streampipes.client</span> <span class="kn">import</span> <span class="n">StreamPipesClient</span>
+<span class="kn">from</span> <span class="nn">streampipes.client.config</span> <span class="kn">import</span> <span class="n">StreamPipesClientConfig</span>
+<span class="kn">from</span> <span class="nn">streampipes.client.credential_provider</span> <span class="kn">import</span> <span class="n">StreamPipesApiKeyCredentials</span>
+
+<span class="n">client_config</span> <span class="o">=</span> <span class="n">StreamPipesClientConfig</span><span class="p">(</span>
+    <span class="n">credential_provider</span><span class="o">=</span><span class="n">StreamPipesApiKeyCredentials</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="s2">"admin@streampipes.apache.org"</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="n">api_key</span><span class="p">),</span>
+    <span class="n">host_address</span><span class="o">=</span><span class="s2">"localhost"</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span>
+    <span class="n">https_disabled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">client</span> <span class="o">=</span> <span class="n">StreamPipesClient</span><span class="p">(</span><span class="n">client_config</span><span class="o">=</span><span class="n">client_config</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-2">
-%pip install git+https://github.com/apache/streampipes.git#subdirectory=streampipes-client-python</div>
+<div class="clipboard-copy-txt" id="cell-2">from streampipes.client import StreamPipesClient
+from streampipes.client.config import StreamPipesClientConfig
+from streampipes.client.credential_provider import StreamPipesApiKeyCredentials
+
+client_config = StreamPipesClientConfig(
+    credential_provider=StreamPipesApiKeyCredentials(username="admin@streampipes.apache.org", api_key=api_key),
+    host_address="localhost",
+    port=80,
+    https_disabled=True,
+)
+client = StreamPipesClient(client_config=client_config)</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2024-07-30 12:44:07,912 - streampipes.client.client - [INFO] - [client.py:199] [_set_up_logging] - Logging successfully initialized with logging level INFO.
+2024-07-30 12:44:07,995 - streampipes.endpoint.endpoint - [INFO] - [endpoint.py:164] [_make_request] - Successfully retrieved all resources.
+2024-07-30 12:44:07,995 - streampipes.client.client - [INFO] - [client.py:172] [_get_server_version] - The StreamPipes version was successfully retrieved from the backend: 0.95.1. By means of that, authentication via the provided credentials is also tested successfully.
+</pre>
 </div>
 </div>
 </div>
@@ -3430,36 +3476,7 @@ Specifically with StreamPipes Python, we want to address the amazing data analyt
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The corresponding documentation can be found <a href="https://streampipes.apache.org/docs/docs/python/dev/">here</a>.
-<br/></p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="How-to-prepare-the-tutorials">How to prepare the tutorials<a class="anchor-link" href="#How-to-prepare-the-tutorials">¶</a></h3><p>In case you want to reproduce the first two tutorials exactly on your end, you need to create a simple pipeline in StreamPipes like demonstrated below.</p>
-<p><img alt="tutorial-preparation" src="https://raw.githubusercontent.com/apache/streampipes/dev/streampipes-client-python/docs/img/tutorial-preparation.gif"/></p>
-<br/>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="How-to-configure-the-Python-client">How to configure the Python client<a class="anchor-link" href="#How-to-configure-the-Python-client">¶</a></h3><p>In order to access the resources available in StreamPipes, one must be able to authenticate against the backend.
-For this purpose, the client so far only supports the authentication via an API token that can be generated via the StreamPipes UI, as you can see below.</p>
-<p><img alt="how-to-get-api-key" src="https://raw.githubusercontent.com/apache/streampipes/dev/streampipes-client-python/docs/img/how-to-get-api-key.gif"/></p>
-<br/>
-<p>Having generated the API token, one can directly start initializing a client instance as follows:</p>
+<h2 id="Creating-an-output-stream">Creating an output stream<a class="anchor-link" href="#Creating-an-output-stream">¶</a></h2><p>You can create an output stream by using the <code>create_data_stream</code> method inside the functions <code>init</code> method. You need to specify the name that will be used to display the stream in StreamPipes alongside its <code>stream_id</code>, <code>attributes</code>, and the <code>broker</code>.</p>
 </div>
 </div>
 </div>
@@ -3482,15 +3499,38 @@ For this purpose, the client so far only supports the authentication via an API 
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">streampipes.client</span> <span class="kn">import</span> <span class="n">StreamPipesClient</span>
-<span class="kn">from</span> <span class="nn">streampipes.client.config</span> <span class="kn">import</span> <span class="n">StreamPipesClientConfig</span>
-<span class="kn">from</span> <span class="nn">streampipes.client.credential_provider</span> <span class="kn">import</span> <span class="n">StreamPipesApiKeyCredentials</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_stream</span><span class="p">:</span> <span class="n">DataStream</span><span class="p">):</span>
+    <span class="n">output_stream</span> <span class="o">=</span> <span class="n">create_data_stream</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="s2">"example-stream"</span><span class="p">,</span>
+                <span class="n">stream_id</span><span class="o">=</span><span class="s2">"example-stream"</span><span class="p">,</span>
+                <span class="n">attributes</span><span class="o">=</span><span class="p">{</span>
+                    <span class="s2">"number"</span><span class="p">:</span> <span class="n">RuntimeType</span><span class="o">.</span><span class="n">INTEGER</span><span class="o">.</span><span class="n">value</span>
+                <span class="p">},</span>
+                <span class="n">broker</span><span class="o">=</span><span class="n">get_broker_description</span><span class="p">(</span><span class="n">input_stream</span><span class="p">)</span>
+            <span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-3">from streampipes.client import StreamPipesClient
-from streampipes.client.config import StreamPipesClientConfig
-from streampipes.client.credential_provider import StreamPipesApiKeyCredentials</div>
+<div class="clipboard-copy-txt" id="cell-3">def __init__(self, input_stream: DataStream):
+    output_stream = create_data_stream(
+                name="example-stream",
+                stream_id="example-stream",
+                attributes={
+                    "number": RuntimeType.INTEGER.value
+                },
+                broker=get_broker_description(input_stream)
+            )</div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>You can now add this <code>output_stream</code> to the function definition and pass it to the parent class.</p>
 </div>
 </div>
 </div>
@@ -3513,25 +3553,17 @@ from streampipes.client.credential_provider import StreamPipesApiKeyCredentials<
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">config</span> <span class="o">=</span> <span class="n">StreamPipesClientConfig</span><span class="p">(</span>
-    <span class="n">credential_provider</span><span class="o">=</span><span class="n">StreamPipesApiKeyCredentials</span><span class="p">(</span>
-        <span class="n">username</span><span class="o">=</span><span class="s2">"test@streampipes.apache.org"</span><span class="p">,</span>
-        <span class="n">api_key</span><span class="o">=</span><span class="s2">"API-KEY"</span><span class="p">,</span>
-    <span class="p">),</span>
-    <span class="n">host_address</span><span class="o">=</span><span class="s2">"localhost"</span><span class="p">,</span>
-    <span class="n">https_disabled</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
-    <span class="n">port</span><span class="o">=</span><span class="mi">80</span>
-<span class="p">)</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">function_definition</span> <span class="o">=</span> <span class="n">FunctionDefinition</span><span class="p">(</span>
+            <span class="n">consumed_streams</span><span class="o">=</span><span class="p">[</span><span class="n">input_stream</span><span class="o">.</span><span class="n">element_id</span><span class="p">]</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">add_output_data_stream</span><span class="p">(</span><span class="n">output_stream</span><span class="p">)</span>
+
+<span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">function_definition</span><span class="o">=</span><span class="n">function_definition</span><span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-4">config = StreamPipesClientConfig(
-    credential_provider=StreamPipesApiKeyCredentials(
-        username="test@streampipes.apache.org",
-        api_key="API-KEY",
-    ),
-    host_address="localhost",
-    https_disabled=True,
-    port=80
-)</div>
+<div class="clipboard-copy-txt" id="cell-4">function_definition = FunctionDefinition(
+            consumed_streams=[input_stream.element_id]
+        ).add_output_data_stream(output_stream)
+
+super().__init__(function_definition=function_definition)</div>
 </div>
 </div>
 </div>
@@ -3544,10 +3576,7 @@ from streampipes.client.credential_provider import StreamPipesApiKeyCredentials<
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Please be aware that connecting to StreamPipes via a <code>https</code> connection is currently not supported by the Python client.</p>
-<p>Providing secrets like the <code>api_key</code> as plaintext in the source code is an anti-pattern.
-This is why the StreamPipes client also supports passing the required secrets as environment variables.
-To do so, you must initialize the credential provider like the following:</p>
+<p>To create the output event we define a dictionary with the key being equvalent to the key we defined for the <code>attributes</code> in the <code>create_data_stream</code> method. The value will just be 1, for simplicity. Lastly we call the <code>add_output</code> method and use the above specified <code>function_definition</code> to get the <code>stream_id</code>. All this is happening inside the <code>onEvent</code> method of the function because this method will be called for every incoming event.</p>
 </div>
 </div>
 </div>
@@ -3570,9 +3599,23 @@ To do so, you must initialize the credential provider like the following:</p>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">StreamPipesApiKeyCredentials</span><span class="p">()</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">output</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"number"</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">}</span>
+            
+<span class="bp">self</span><span class="o">.</span><span class="n">add_output</span><span class="p">(</span>
+    <span class="n">stream_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">function_definition</span><span class="o">.</span><span class="n">get_output_stream_ids</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="n">event</span><span class="o">=</span><span class="n">output</span>
+<span class="p">)</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-5">StreamPipesApiKeyCredentials()</div>
+<div class="clipboard-copy-txt" id="cell-5">output = {
+    "number": 1
+}
+            
+self.add_output(
+    stream_id=self.function_definition.get_output_stream_ids()[0],
+    event=output
+)</div>
 </div>
 </div>
 </div>
@@ -3585,8 +3628,7 @@ To do so, you must initialize the credential provider like the following:</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>To ensure that the above code works, you must set the environment variables as expected.
-This can be done as follows:</p>
+<h2 id="Creating-the-StreamPipes-Function">Creating the StreamPipes Function<a class="anchor-link" href="#Creating-the-StreamPipes-Function">¶</a></h2><p>The code below shows an example function and also demonstrates how to include the output stream creation.</p>
 </div>
 </div>
 </div>
@@ -3596,7 +3638,7 @@ This can be done as follows:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
 <clipboard-copy for="cell-6">
@@ -3609,14 +3651,91 @@ This can be done as follows:</p>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"SP_USERNAME"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"admin@streampipes.apache.org"</span>
-<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"SP_API_KEY"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"XXX"</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Dict</span><span class="p">,</span> <span class="n">Any</span>
+<span class="kn">from</span> <span class="nn">streampipes.functions.streampipes_function</span> <span class="kn">import</span> <span class="n">StreamPipesFunction</span>
+<span class="kn">from</span> <span class="nn">streampipes.functions.utils.data_stream_generator</span> <span class="kn">import</span> <span class="n">create_data_stream</span><span class="p">,</span> <span class="n">RuntimeType</span>
+<span class="kn">from</span> <span class="nn">streampipes.functions.broker.broker_handler</span> <span class="kn">import</span> <span class="n">get_broker_description</span>
+<span class="kn">from</span> <span class="nn">streampipes.model.resource</span> <span class="kn">import</span> <span class="n">FunctionDefinition</span><span class="p">,</span> <span class="n">DataStream</span>
+<span class="kn">from</span> <span class="nn">streampipes.functions.utils.function_context</span> <span class="kn">import</span> <span class="n">FunctionContext</span>
+<span class="kn">from</span> <span class="nn">streampipes.functions.function_handler</span> <span class="kn">import</span> <span class="n">FunctionHandler</span>
+<span class="kn">from</span> <span class="nn">streampipes.functions.registration</span> <span class="kn">import</span> <span class="n">Registration</span>
+
+<span class="k">class</span> <span class="nc">SimpleFunction</span><span class="p">(</span><span class="n">StreamPipesFunction</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_stream</span><span class="p">:</span> <span class="n">DataStream</span><span class="p">):</span>
+        <span class="n">output_stream</span> <span class="o">=</span> <span class="n">create_data_stream</span><span class="p">(</span>
+            <span class="n">name</span><span class="o">=</span><span class="s2">"example-stream"</span><span class="p">,</span>
+            <span class="n">stream_id</span><span class="o">=</span><span class="s2">"example-stream"</span><span class="p">,</span>
+            <span class="n">attributes</span><span class="o">=</span><span class="p">{</span>
+                <span class="s2">"number"</span><span class="p">:</span> <span class="n">RuntimeType</span><span class="o">.</span><span class="n">INTEGER</span><span class="o">.</span><span class="n">value</span>
+            <span class="p">},</span>
+            <span class="n">broker</span><span class="o">=</span><span class="n">get_broker_description</span><span class="p">(</span><span class="n">input_stream</span><span class="p">)</span>
+        <span class="p">)</span>
+        
+        <span class="n">function_definition</span> <span class="o">=</span> <span class="n">FunctionDefinition</span><span class="p">(</span>
+            <span class="n">consumed_streams</span><span class="o">=</span><span class="p">[</span><span class="n">input_stream</span><span class="o">.</span><span class="n">element_id</span><span class="p">]</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">add_output_data_stream</span><span class="p">(</span><span class="n">output_stream</span><span class="p">)</span>
+
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">function_definition</span><span class="o">=</span><span class="n">function_definition</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">onServiceStarted</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">:</span> <span class="n">FunctionContext</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">onEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">],</span> <span class="n">streamId</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">output</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"number"</span><span class="p">:</span> <span class="mi">1</span>
+        <span class="p">}</span>
+            
+        <span class="bp">self</span><span class="o">.</span><span class="n">add_output</span><span class="p">(</span>
+            <span class="n">stream_id</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">function_definition</span><span class="o">.</span><span class="n">get_output_stream_ids</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span>
+            <span class="n">event</span><span class="o">=</span><span class="n">output</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">onServiceStopped</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6">import os
-os.environ["SP_USERNAME"] = "admin@streampipes.apache.org"
-os.environ["SP_API_KEY"] = "XXX"
-</div>
+<div class="clipboard-copy-txt" id="cell-6">import pandas as pd
+from typing import Dict, Any
+from streampipes.functions.streampipes_function import StreamPipesFunction
+from streampipes.functions.utils.data_stream_generator import create_data_stream, RuntimeType
+from streampipes.functions.broker.broker_handler import get_broker_description
+from streampipes.model.resource import FunctionDefinition, DataStream
+from streampipes.functions.utils.function_context import FunctionContext
+from streampipes.functions.function_handler import FunctionHandler
+from streampipes.functions.registration import Registration
+
+class SimpleFunction(StreamPipesFunction):
+    def __init__(self, input_stream: DataStream):
+        output_stream = create_data_stream(
+            name="example-stream",
+            stream_id="example-stream",
+            attributes={
+                "number": RuntimeType.INTEGER.value
+            },
+            broker=get_broker_description(input_stream)
+        )
+        
+        function_definition = FunctionDefinition(
+            consumed_streams=[input_stream.element_id]
+        ).add_output_data_stream(output_stream)
+
+        super().__init__(function_definition=function_definition)
+
+    def onServiceStarted(self, context: FunctionContext):
+        pass
+
+    def onEvent(self, event: Dict[str, Any], streamId: str):
+        output = {
+            "number": 1
+        }
+            
+        self.add_output(
+            stream_id=self.function_definition.get_output_stream_ids()[0],
+            event=output
+        )
+
+    def onServiceStopped(self):
+        pass</div>
 </div>
 </div>
 </div>
@@ -3629,45 +3748,7 @@ os.environ["SP_API_KEY"] = "XXX"
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Having the <code>config</code> ready, we can now initialize the actual client.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy for="cell-7">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">client</span> <span class="o">=</span> <span class="n">StreamPipesClient</span><span class="p">(</span><span class="n">client_config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-7">client = StreamPipesClient(client_config=config)</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>That's already it. You can check if everything works out by using the following command:</p>
+<h2 id="Instantiating-and-starting-the-function">Instantiating and starting the function<a class="anchor-link" href="#Instantiating-and-starting-the-function">¶</a></h2><p>To instantiate the function we pass the required input stream, then we register the function using an instance of the class <code>Registration</code> after which we can use the function handler to initialize all registered functions using the client. In this case, our input stream is named 'demo'. You will need to replace this name with the name of the input stream you wish to use.</p>
 </div>
 </div>
 </div>
@@ -3680,7 +3761,7 @@ os.environ["SP_API_KEY"] = "XXX"
 <div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="CodeMirror cm-s-jupyter">
 <div class="zeroclipboard-container">
-<clipboard-copy for="cell-8">
+<clipboard-copy for="cell-7">
 <div>
 <span class="notice" hidden="">Copied!</span>
 <svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
@@ -3690,9 +3771,25 @@ os.environ["SP_API_KEY"] = "XXX"
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">client</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">stream</span> <span class="o">=</span> <span class="p">[</span><span class="n">stream</span> <span class="k">for</span> <span class="n">stream</span> <span class="ow">in</span> <span class="n">client</span><span class="o">.</span><span class="n">dataStreamApi</span><span class="o">.</span><span class="n">all</span><span class="p">()</span> <span class="k">if</span> <span class="n">stream</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">"demo"</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">simple_function</span> <span class="o">=</span> <span class="n">SimpleFunction</span><span class="p">(</span><span class="n">input_stream</span><span class="o">=</span><span class="n">stream</span><span class="p">)</span>
+
+<span class="n">registration</span> <span class="o">=</span> <span class="n">Registration</span><span class="p">()</span>
+<span class="n">registration</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">simple_function</span><span class="p">)</span>
+
+<span class="n">function_handler</span> <span class="o">=</span> <span class="n">FunctionHandler</span><span class="p">(</span><span class="n">registration</span><span class="p">,</span> <span class="n">client</span><span class="p">)</span>
+<span class="n">function_handler</span><span class="o">.</span><span class="n">initializeFunctions</span><span class="p">()</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-8">client.describe()</div>
+<div class="clipboard-copy-txt" id="cell-7">stream = [stream for stream in client.dataStreamApi.all() if stream.name == "demo"][0]
+
+simple_function = SimpleFunction(input_stream=stream)
+
+registration = Registration()
+registration.register(simple_function)
+
+function_handler = FunctionHandler(registration, client)
+function_handler.initializeFunctions()</div>
 </div>
 </div>
 </div>
@@ -3704,14 +3801,21 @@ os.environ["SP_API_KEY"] = "XXX"
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2023-02-24 17:05:49,398 - streampipes.endpoint.endpoint - [INFO] - [endpoint.py:167] [_make_request] - Successfully retrieved all resources.
-2023-02-24 17:05:49,457 - streampipes.endpoint.endpoint - [INFO] - [endpoint.py:167] [_make_request] - Successfully retrieved all resources.
-
-Hi there!
-You are connected to a StreamPipes instance running at http://localhost:80.
-The following StreamPipes resources are available with this client:
-1x DataLakeMeasures
-1x DataStreams
+<pre>2024-07-30 12:44:25,052 - streampipes.endpoint.endpoint - [INFO] - [endpoint.py:164] [_make_request] - Successfully retrieved all resources.
+2024-07-30 12:44:25,150 - streampipes.endpoint.endpoint - [INFO] - [endpoint.py:164] [_make_request] - Successfully retrieved all resources.
+2024-07-30 12:44:25,150 - streampipes.functions.function_handler - [INFO] - [function_handler.py:84] [initializeFunctions] - Using output data stream 'example-stream' for function '0e4287a7-6936-4fcb-9de4-8d29a7b6c1c6'
+2024-07-30 12:44:25,229 - streampipes.endpoint.endpoint - [INFO] - [endpoint.py:164] [_make_request] - Successfully retrieved all resources.
+2024-07-30 12:44:25,230 - streampipes.functions.function_handler - [INFO] - [function_handler.py:100] [initializeFunctions] - Using KafkaConsumer for SimpleFunction
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2024-07-30 12:44:25,247 - streampipes.functions.broker.kafka.kafka_publisher - [INFO] - [kafka_publisher.py:49] [_make_connection] - Connecting to Kafka at localhost:9094
+2024-07-30 12:44:25,250 - streampipes.functions.broker.kafka.kafka_consumer - [INFO] - [kafka_consumer.py:52] [_make_connection] - Connecting to Kafka at localhost:9094
+2024-07-30 12:44:25,251 - streampipes.functions.broker.kafka.kafka_consumer - [INFO] - [kafka_consumer.py:62] [_create_subscription] - Subscribing to stream: sp:spdatastream:PIgznU
+2024-07-30 12:46:12,229 - streampipes.functions.broker.kafka.kafka_publisher - [INFO] - [kafka_publisher.py:73] [disconnect] - Stopped connection to stream: example-stream
 </pre>
 </div>
 </div>
@@ -3725,17 +3829,71 @@ The following StreamPipes resources are available with this client:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>This prints you a short textual description of the connected StreamPipes instance to the console.</p>
-<br/>
-<p>The created <code>client</code> instance serves as the central point of interaction with StreamPipes.
-You can invoke a variety of commands directly on this object.</p>
-<p>Are you curious now how you actually can get data out of StreamPipes and make use of it with Python?
-Then check out the next tutorial on <a href="../2-extracting-data-from-the-streampipes-data-lake">extracting Data from the StreamPipes data lake</a>.</p>
-<br/>
-<p>Thanks for reading this introductory tutorial.
-We hope you like it and would love to receive some feedback from you.
-Just go to our <a href="https://github.com/apache/streampipes/discussions">GitHub discussion page</a> and let us know your impression.
-We'll read and react to them all, we promise!</p>
+<p>If we now go into StreamPipes, create a new pipeline and view the info for our output stream we can see the live predictions coming in.</p>
+<p><img alt="" src="https://raw.githubusercontent.com/apache/streampipes/dev/streampipes-client-python/docs/img/tutorial-output-stream.png"/></p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>To stop the function we call the function handler's <code>disconnect</code> method:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="CodeMirror cm-s-jupyter">
+<div class="zeroclipboard-container">
+<clipboard-copy for="cell-8">
+<div>
+<span class="notice" hidden="">Copied!</span>
+<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
+<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+</clipboard-copy>
+</div>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="n">function_handler</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
+</pre></div>
+<div class="clipboard-copy-txt" id="cell-8">function_handler.disconnect()</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>2024-07-30 12:46:12,171 - streampipes.functions.broker.kafka.kafka_consumer - [INFO] - [kafka_consumer.py:72] [disconnect] - Stopped connection to stream: sp:spdatastream:PIgznU
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>In conclusion, this tutorial has successfully demonstrated how to generate output streams using a StreamPipes Function.<br/>
+We hope you found this tutorial helpful and would appreciate your feedback. Please visit our GitHub discussion page to share your impressions. We promise to read and respond to every comment!</p>
 </div>
 </div>
 </div>
@@ -3748,7 +3906,7 @@ We'll read and react to them all, we promise!</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2024</span>
       
     
   </small>
