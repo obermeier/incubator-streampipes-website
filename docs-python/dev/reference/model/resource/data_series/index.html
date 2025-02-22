@@ -40,8 +40,8 @@
         <link rel="next" href="../data_stream/">
       
       
-      <link rel="icon" href="https://streampipes.apache.org/img/favicon/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <link rel="icon" href="https://streampipes.apache.org/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.2">
     
     
       
@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.30068a00.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.85d0ee34.min.css">
@@ -236,6 +236,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -556,6 +558,10 @@
       
         
       
+        
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -655,6 +661,46 @@
   
   <span class="md-ellipsis">
     Using Online Machine Learning on a StreamPipes data stream
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/5-applying-interoperable-machine-learning-in-streampipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applying Interoperable Machine Learning in StreamPipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/6-streampipes-function-output-stream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating Output Streams with StreamPipes Functions
   </span>
   
 
@@ -2016,7 +2062,7 @@
       
         <li class="md-nav__item">
   <a href="#streampipes.model.resource.data_series" class="md-nav__link">
-    streampipes.model.resource.data_series
+    data_series
   </a>
   
 </li>
@@ -2030,22 +2076,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#streampipes.model.resource.data_series.DataSeries.Config" class="md-nav__link">
+    Config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#streampipes.model.resource.data_series.DataSeries.convert_to_pandas_representation" class="md-nav__link">
-    convert_to_pandas_representation()
+    convert_to_pandas_representation
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#streampipes.model.resource.data_series.DataSeries.from_json" class="md-nav__link">
-    from_json()
+    from_json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streampipes.model.resource.data_series.DataSeries.to_dict" class="md-nav__link">
+    to_dict
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#streampipes.model.resource.data_series.DataSeries.to_pandas" class="md-nav__link">
-    to_pandas()
+    to_pandas
   </a>
   
 </li>
@@ -2233,7 +2293,7 @@
       
         <li class="md-nav__item">
   <a href="#streampipes.model.resource.data_series" class="md-nav__link">
-    streampipes.model.resource.data_series
+    data_series
   </a>
   
 </li>
@@ -2247,22 +2307,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#streampipes.model.resource.data_series.DataSeries.Config" class="md-nav__link">
+    Config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#streampipes.model.resource.data_series.DataSeries.convert_to_pandas_representation" class="md-nav__link">
-    convert_to_pandas_representation()
+    convert_to_pandas_representation
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#streampipes.model.resource.data_series.DataSeries.from_json" class="md-nav__link">
-    from_json()
+    from_json
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streampipes.model.resource.data_series.DataSeries.to_dict" class="md-nav__link">
+    to_dict
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#streampipes.model.resource.data_series.DataSeries.to_pandas" class="md-nav__link">
-    to_pandas()
+    to_pandas
   </a>
   
 </li>
@@ -2287,12 +2361,18 @@
                   
 
   
+    <a href="https://github.com/apache/streampipes/blob/dev/streampipes-client-python/docs/streampipes/model/resource/data_series.py" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
   
 
 
   <h1>Data series</h1>
 
 <div class="doc doc-object doc-module">
+
 
 
 <a id="streampipes.model.resource.data_series"></a>
@@ -2330,10 +2410,41 @@ This resource defines the data model used by its resource container(<code>model.
 It inherits from Pydantic's BaseModel to get all its superpowers,
 which are used to parse, validate the API response and to easily switch between
 the Python representation (both serialized and deserialized) and Java representation (serialized only).</p>
-<h4 id="streampipes.model.resource.data_series.DataSeries--notes">Notes<a class="headerlink" href="#streampipes.model.resource.data_series.DataSeries--notes" title="Permanent link">&para;</a></h4>
-<div class="language-text highlight"><pre><span></span><code>This class will only exist temporarily in it its current appearance since
+
+<details class="note" open>
+  <summary>Notes</summary>
+  <div class="language-text highlight"><pre><span></span><code>This class will only exist temporarily in it its current appearance since
 there are some inconsistencies in the StreamPipes API.
 </code></pre></div>
+</details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="streampipes.model.resource.data_series.DataSeries.Config" class="doc doc-heading">
+          <code>Config</code>
+
+
+<a href="#streampipes.model.resource.data_series.DataSeries.Config" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents ">
+
+  
+      <p>Configuration class for Pydantic.
+Defines alias generator to convert field names from camelCase (API) to snake_case (Python codebase).</p>
 
 
   
@@ -2349,12 +2460,22 @@ there are some inconsistencies in the StreamPipes API.
 
 
 
+
+  </div>
+
+  </div>
+
+
+</div>
+
+
+
 <div class="doc doc-object doc-function">
 
 
 
 <h3 id="streampipes.model.resource.data_series.DataSeries.convert_to_pandas_representation" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">convert_to_pandas_representation</span><span class="p">()</span></code>
+          <code class="highlight language-python"><span class="n">convert_to_pandas_representation</span><span class="p">()</span></code>
 
 <a href="#streampipes.model.resource.data_series.DataSeries.convert_to_pandas_representation" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2404,7 +2525,7 @@ to be used when creating a pandas Dataframe.</p>
 
 
 <h3 id="streampipes.model.resource.data_series.DataSeries.from_json" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">from_json</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span></code>
+          <code class="highlight language-python"><span class="n">from_json</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span></code>
   
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
@@ -2507,8 +2628,84 @@ with the current version of the Python client.</p>
 
 
 
+<h3 id="streampipes.model.resource.data_series.DataSeries.to_dict" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">to_dict</span><span class="p">(</span><span class="n">use_source_names</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span></code>
+
+<a href="#streampipes.model.resource.data_series.DataSeries.to_dict" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Returns the resource in dictionary representation.</p>
+
+
+
+  <table>
+    <thead>
+      <tr>
+        <th><b>PARAMETER</b></th>
+        <th><b> DESCRIPTION</b></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>use_source_names</code></td>
+          <td class="doc-param-details">
+            <div class="doc-md-description">
+              <p>Indicates if the dictionary keys are in python representation or
+equally named to the StreamPipes backend</p>
+            </div>
+            <p>
+                <span class="doc-param-default">
+                  <b>DEFAULT:</b> 
+                    <code>True</code>
+                </span>
+            </p>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <table>
+    <thead>
+      <tr>
+        <th><b>RETURNS</b></th>
+        <th><b>DESCRIPTION</b></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+              <code>resource</code>
+          </td>
+          <td class="doc-returns-details">
+            <div class="doc-md-description">
+              <p>The resource as dictionary representation</p>
+            </div>
+              <p>
+                <span class="doc-returns-annotation">
+                  <b>TYPE:</b>
+                    <code><span title="typing.Dict">Dict</span>[str, Any]</code>
+                </span>
+              </p>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
 <h3 id="streampipes.model.resource.data_series.DataSeries.to_pandas" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">to_pandas</span><span class="p">()</span></code>
+          <code class="highlight language-python"><span class="n">to_pandas</span><span class="p">()</span></code>
 
 <a href="#streampipes.model.resource.data_series.DataSeries.to_pandas" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2538,7 +2735,7 @@ with the current version of the Python client.</p>
               <p>
                 <span class="doc-returns-annotation">
                   <b>TYPE:</b>
-                    <code><span title="pandas">pd</span>.<span title="pandas.DataFrame">DataFrame</span></code>
+                    <code><span title="pandas.DataFrame">DataFrame</span></code>
                 </span>
               </p>
           </td>
@@ -2556,6 +2753,7 @@ with the current version of the Python client.</p>
 
   </div>
 
+
 </div>
 
 
@@ -2565,6 +2763,17 @@ with the current version of the Python client.</p>
 
   </div>
 
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 22, 2025</span>
+      
+    
+  </small>
 </div>
 
 
@@ -2624,7 +2833,7 @@ with the current version of the Python client.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking"], "search": "../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.edit", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking", "search.suggest"], "search": "../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>

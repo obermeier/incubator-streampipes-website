@@ -40,8 +40,8 @@
         <link rel="next" href="../3-getting-live-data-from-the-streampipes-data-stream/">
       
       
-      <link rel="icon" href="https://streampipes.apache.org/img/favicon/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <link rel="icon" href="https://streampipes.apache.org/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.2">
     
     
       
@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
@@ -236,6 +236,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -556,6 +558,10 @@
       
         
       
+        
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -665,6 +671,46 @@
   
   <span class="md-ellipsis">
     Using Online Machine Learning on a StreamPipes data stream
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-applying-interoperable-machine-learning-in-streampipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applying Interoperable Machine Learning in StreamPipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-streampipes-function-output-stream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating Output Streams with StreamPipes Functions
   </span>
   
 
@@ -2167,6 +2213,11 @@
                   
 
   
+    <a href="https://github.com/apache/streampipes/blob/dev/streampipes-client-python/docs/tutorials/2-extracting-data-from-the-streampipes-data-lake.ipynb" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
   
 
 
@@ -3435,7 +3486,7 @@ For his purpose we use the <code>all()</code> method of the <code>dataLakeMeasur
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>So let's see how many measures are available</p>
+<p>So let's see how many measures are available:</p>
 </div>
 </div>
 </div>
@@ -3535,7 +3586,7 @@ For his purpose we use the <code>all()</code> method of the <code>dataLakeMeasur
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>To get a more comprehensive overview, you can take a look at the <a href="https://pandas.pydata.org/"><code>pandas</code></a> representation</p>
+<p>To get a more comprehensive overview, you can take a look at the <a href="https://pandas.pydata.org/"><code>pandas</code></a> representation:</p>
 </div>
 </div>
 </div>
@@ -3906,7 +3957,7 @@ In the following, we will access the actual data of the measure <code>flow-rate<
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>As a final step, we want to create a plot of both attributes</p>
+<p>As a final step, we want to create a plot of both attributes.</p>
 </div>
 </div>
 </div>
@@ -4246,9 +4297,9 @@ plt.show()</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>... from this point on we leave all future processing of the data up to your creativity.
+<p>... from this point on, we leave all future processing of the data up to your creativity.
 Keep in mind: the general syntax used in this tutorial (<code>all()</code>, <code>to_pandas()</code>, <code>get()</code>) applies to all endpoints and associated resources of the StreamPipes Python client.</p>
-<p>If you get further and create exiting stuff with data extracted from StreamPipes please <a href="https://github.com/apache/streampipes/discussions/categories/show-and-tell">let us know</a>.
+<p>If you get further and create exciting stuff with data extracted from StreamPipes please <a href="https://github.com/apache/streampipes/discussions/categories/show-and-tell">let us know</a>.
 We are thrilled to see what you as a community will build with the provided client.
 Furthermore, don't hesitate to discuss <a href="https://github.com/apache/streampipes/discussions/812">feature requests</a> to extend the current functionality with us.</p>
 </div>
@@ -4261,7 +4312,7 @@ Furthermore, don't hesitate to discuss <a href="https://github.com/apache/stream
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>For now, that's all about the StreamPipes client. Read the next tutorial (<a href="../3-getting-live-data-from-the-streampipes-data-stream">Getting live data from the StreamPipes data stream</a>) if you are interested in making use of the powerful <a href="https://streampipes.apache.org/docs/docs/extend-sdk-functions.html">StreamPipes functions</a> to interact with StreamPipes event-based.</p>
+<p>For now, that's all about the StreamPipes client. Read the next tutorial (<a href="../3-getting-live-data-from-the-streampipes-data-stream">Getting live data from the StreamPipes data stream</a>) if you are interested in making use of the powerful <a href="https://streampipes.apache.org/docs/extend-sdk-functions.html">StreamPipes functions</a> to interact with StreamPipes in an event-based manner.</p>
 </div>
 </div>
 </div>
@@ -4292,6 +4343,17 @@ We'll read and react to them all, we promise!</p>
 </div>
 </div>
 
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2024</span>
+      
+    
+  </small>
+</div>
 
 
   
@@ -4350,7 +4412,7 @@ We'll read and react to them all, we promise!</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking", "search.suggest"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>

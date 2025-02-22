@@ -40,8 +40,8 @@
         <link rel="next" href="../data_stream/">
       
       
-      <link rel="icon" href="https://streampipes.apache.org/img/favicon/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <link rel="icon" href="https://streampipes.apache.org/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.2">
     
     
       
@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.30068a00.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.85d0ee34.min.css">
@@ -236,6 +236,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -556,6 +558,10 @@
       
         
       
+        
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -655,6 +661,46 @@
   
   <span class="md-ellipsis">
     Using Online Machine Learning on a StreamPipes data stream
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/5-applying-interoperable-machine-learning-in-streampipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applying Interoperable Machine Learning in StreamPipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/6-streampipes-function-output-stream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating Output Streams with StreamPipes Functions
   </span>
   
 
@@ -1006,7 +1052,7 @@
       
         <li class="md-nav__item">
   <a href="#streampipes.endpoint.api.data_lake_measure" class="md-nav__link">
-    streampipes.endpoint.api.data_lake_measure
+    data_lake_measure
   </a>
   
 </li>
@@ -1020,8 +1066,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.all" class="md-nav__link">
+    all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.build_url" class="md-nav__link">
+    build_url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.get" class="md-nav__link">
-    get()
+    get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.post" class="md-nav__link">
+    post
   </a>
   
 </li>
@@ -1048,7 +1115,7 @@
         
           <li class="md-nav__item">
   <a href="#streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.build_query_string" class="md-nav__link">
-    build_query_string()
+    build_query_string
   </a>
   
 </li>
@@ -2253,7 +2320,7 @@
       
         <li class="md-nav__item">
   <a href="#streampipes.endpoint.api.data_lake_measure" class="md-nav__link">
-    streampipes.endpoint.api.data_lake_measure
+    data_lake_measure
   </a>
   
 </li>
@@ -2267,8 +2334,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.all" class="md-nav__link">
+    all
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.build_url" class="md-nav__link">
+    build_url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.get" class="md-nav__link">
-    get()
+    get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.post" class="md-nav__link">
+    post
   </a>
   
 </li>
@@ -2295,7 +2383,7 @@
         
           <li class="md-nav__item">
   <a href="#streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.build_query_string" class="md-nav__link">
-    build_query_string()
+    build_query_string
   </a>
   
 </li>
@@ -2327,12 +2415,18 @@
                   
 
   
+    <a href="https://github.com/apache/streampipes/blob/dev/streampipes-client-python/docs/streampipes/endpoint/api/data_lake_measure.py" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
   
 
 
   <h1>Data lake measure</h1>
 
 <div class="doc doc-object doc-module">
+
 
 
 <a id="streampipes.endpoint.api.data_lake_measure"></a>
@@ -2357,8 +2451,7 @@ This endpoint allows to consume data stored in StreamPipes' data lake.</p>
 
 
 <h2 id="streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint" class="doc doc-heading">
-          <code>DataLakeMeasureEndpoint</code>
-
+            <code class="highlight language-python"><span class="n">DataLakeMeasureEndpoint</span><span class="p">(</span><span class="n">parent_client</span><span class="p">)</span></code>
 
 <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint" class="headerlink" title="Permanent link">&para;</a></h2>
 
@@ -2453,8 +2546,106 @@ find them at <a class="autorefs autorefs-internal" href="#streampipes.endpoint.a
 
 
 
+<h3 id="streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.all" class="doc doc-heading">
+          <code class="highlight language-python"><span class="nb">all</span><span class="p">()</span></code>
+
+<a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.all" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Get all resources of this endpoint provided by the StreamPipes API.</p>
+<p>Results are provided as an instance of a <code>ResourceContainer</code> that
+allows to handle the returned resources in a comfortable and pythonic way.</p>
+
+
+
+  <table>
+    <thead>
+      <tr>
+        <th><b>RETURNS</b></th>
+        <th><b>DESCRIPTION</b></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+              <code>container</code>
+          </td>
+          <td class="doc-returns-details">
+            <div class="doc-md-description">
+              <p>Container element that bundles the returned resources</p>
+            </div>
+              <p>
+                <span class="doc-returns-annotation">
+                  <b>TYPE:</b>
+                    <code><a class="autorefs autorefs-internal" title="streampipes.model.container.resource_container.ResourceContainer" href="../../../model/container/resource_container/#streampipes.model.container.resource_container.ResourceContainer">ResourceContainer</a></code>
+                </span>
+              </p>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.build_url" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">build_url</span><span class="p">()</span></code>
+
+<a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.build_url" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Builds the endpoint's URL of the API path.</p>
+
+
+
+  <table>
+    <thead>
+      <tr>
+        <th><b>RETURNS</b></th>
+        <th><b>DESCRIPTION</b></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+              <code>url</code>
+          </td>
+          <td class="doc-returns-details">
+            <div class="doc-md-description">
+              <p>The URL of the endpoint</p>
+            </div>
+              <p>
+                <span class="doc-returns-annotation">
+                  <b>TYPE:</b>
+                    <code>str</code>
+                </span>
+              </p>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
 <h3 id="streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.get" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">get</span><span class="p">(</span><span class="n">identifier</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+          <code class="highlight language-python"><span class="n">get</span><span class="p">(</span><span class="n">identifier</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
 
 <a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.get" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2494,7 +2685,7 @@ This behaviour can be influenced by passing the parameter <code>limit</code> wit
           <td><code>**kwargs</code></td>
           <td class="doc-param-details">
             <div class="doc-md-description">
-              <p>keyword arguments can be used to provide additional query parameters.
+              <p>Keyword arguments can be used to provide additional query parameters.
 The available query parameters are defined by the
 <a class="autorefs autorefs-internal" href="#streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig">MeasurementGetQueryConfig</a>.</p>
             </div>
@@ -2529,12 +2720,12 @@ The available query parameters are defined by the
           </td>
           <td class="doc-returns-details">
             <div class="doc-md-description">
-              <p>the specified data lake measure</p>
+              <p>The specified data lake measure</p>
             </div>
               <p>
                 <span class="doc-returns-annotation">
                   <b>TYPE:</b>
-                    <code><a class="autorefs autorefs-internal" title="streampipes.model.container.DataLakeMeasures" href="../../../model/container/data_lake_measures/#streampipes.model.container.data_lake_measures.DataLakeMeasures">DataLakeMeasures</a></code>
+                    <code><a class="autorefs autorefs-internal" title="streampipes.model.resource.query_result.QueryResult" href="../../../model/resource/query_result/#streampipes.model.resource.query_result.QueryResult">QueryResult</a></code>
                 </span>
               </p>
           </td>
@@ -2552,10 +2743,82 @@ The available query parameters are defined by the
 </div>
 
 
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.post" class="doc doc-heading">
+          <code class="highlight language-python"><span class="n">post</span><span class="p">(</span><span class="n">resource</span><span class="p">)</span></code>
+
+<a href="#streampipes.endpoint.api.data_lake_measure.DataLakeMeasureEndpoint.post" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Allows to post a resource to the StreamPipes API.</p>
+
+
+
+  <table>
+    <thead>
+      <tr>
+        <th><b>PARAMETER</b></th>
+        <th><b> DESCRIPTION</b></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>resource</code></td>
+          <td class="doc-param-details">
+            <div class="doc-md-description">
+              <p>The resource to be posted.</p>
+            </div>
+            <p>
+                <span class="doc-param-annotation">
+                  <b>TYPE:</b>
+                    <code><a class="autorefs autorefs-internal" title="streampipes.model.resource.resource.Resource" href="../../../model/resource/resource/#streampipes.model.resource.resource.Resource">Resource</a></code>
+                </span>
+            </p>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+
+
+  <table>
+    <thead>
+      <tr>
+        <th><b>RETURNS</b></th>
+        <th><b>DESCRIPTION</b></th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+              <span class="doc-returns-annotation">
+                  <code>None</code>
+              </span>
+          </td>
+          <td class="doc-returns-details">
+            <div class="doc-md-description">
+              
+            </div>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</div>
+
+
 
   </div>
 
   </div>
+
 
 </div>
 
@@ -2572,7 +2835,7 @@ The available query parameters are defined by the
 
   <div class="doc doc-contents ">
           <p class="doc doc-class-bases">
-            Bases: <code><span title="pydantic.BaseModel">BaseModel</span></code></p>
+            Bases: <code><span title="pydantic.v1.BaseModel">BaseModel</span></code></p>
 
   
       <p>Config class describing the parameters of the <code>get()</code> method for measurements.</p>
@@ -2592,7 +2855,7 @@ for which <a href="https://docs.pydantic.dev/usage/model_config/#options">Pydant
     </thead>
     <tbody>
         <tr>
-          <td><code>columns</code></td>
+          <td><code><span title="streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.columns">columns</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
               <p>A comma separated list of column names (e.g., <code>time,value</code>)<br>
@@ -2608,10 +2871,11 @@ Please be aware that the column <code>time</code> as an index is always included
           </td>
         </tr>
         <tr>
-          <td><code>end_date</code></td>
+          <td><code><span title="streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.end_date">end_date</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
-              <p>Restricts queried data to be younger than the specified time.</p>
+              <p>Limits the queried data to only include data that is older than the specified time.
+In other words, any data that occurred after the end_date will not be included in the query results.</p>
             </div>
             <p>
                 <span class="doc-attribute-annotation">
@@ -2622,7 +2886,7 @@ Please be aware that the column <code>time</code> as an index is always included
           </td>
         </tr>
         <tr>
-          <td><code>limit</code></td>
+          <td><code><span title="streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.limit">limit</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
               <p>Amount of records returned at maximum (default: <code>1000</code>) <br>
@@ -2637,7 +2901,7 @@ This needs to be at least <code>1</code></p>
           </td>
         </tr>
         <tr>
-          <td><code>offset</code></td>
+          <td><code><span title="streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.offset">offset</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
               <p>Offset to be applied to returned data <br>
@@ -2652,7 +2916,7 @@ This needs to be at least <code>0</code></p>
           </td>
         </tr>
         <tr>
-          <td><code>order</code></td>
+          <td><code><span title="streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.order">order</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
               <p>Ordering of query results <br>
@@ -2667,7 +2931,7 @@ Allowed values: <code>ASC</code> and <code>DESC</code> (default: <code>ASC</code
           </td>
         </tr>
         <tr>
-          <td><code>page_no</code></td>
+          <td><code><span title="streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.page_no">page_no</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
               <p>Page number used for paging operation <br>
@@ -2682,10 +2946,11 @@ This needs to be at least <code>1</code></p>
           </td>
         </tr>
         <tr>
-          <td><code>start_date</code></td>
+          <td><code><span title="streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.start_date">start_date</span></code></td>
           <td class="doc-attribute-details">
             <div class="doc-md-description">
-              <p>Restricts queried data to be older than the specified time</p>
+              <p>Limits the queried data to only include data that is newer than the specified time.
+In other words, any data that occurred before the start_date will not be included in the query results.</p>
             </div>
             <p>
                 <span class="doc-attribute-annotation">
@@ -2745,6 +3010,7 @@ This needs to be at least <code>1</code></p>
 
   </div>
 
+
 </div>
 
 
@@ -2754,7 +3020,7 @@ This needs to be at least <code>1</code></p>
 
 
 <h3 id="streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.build_query_string" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">build_query_string</span><span class="p">()</span></code>
+          <code class="highlight language-python"><span class="n">build_query_string</span><span class="p">()</span></code>
 
 <a href="#streampipes.endpoint.api.data_lake_measure.MeasurementGetQueryConfig.build_query_string" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -2805,6 +3071,7 @@ This query string is not an entire URL, instead it needs to appended to an API p
 
   </div>
 
+
 </div>
 
 <div class="doc doc-object doc-class">
@@ -2829,6 +3096,7 @@ causes an error.</p>
 
   </div>
 
+
 </div>
 
 
@@ -2838,6 +3106,17 @@ causes an error.</p>
 
   </div>
 
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 22, 2025</span>
+      
+    
+  </small>
 </div>
 
 
@@ -2897,7 +3176,7 @@ causes an error.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking"], "search": "../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.edit", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking", "search.suggest"], "search": "../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
