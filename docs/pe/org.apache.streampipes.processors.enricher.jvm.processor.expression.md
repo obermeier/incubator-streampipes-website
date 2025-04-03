@@ -1,7 +1,7 @@
 ---
-id: org.apache.streampipes.connect.adapters.coindesk
-title: Coindesk Bitcoin Price
-sidebar_label: Coindesk Bitcoin Price
+id: org.apache.streampipes.processors.enricher.jvm.processor.expression
+title: Math Expression
+sidebar_label: Math Expression
 ---
 
 <!--
@@ -25,20 +25,37 @@ sidebar_label: Coindesk Bitcoin Price
 
 
 <p align="center"> 
-    <img src="/img/pipeline-elements/org.apache.streampipes.connect.adapters.coindesk/icon.png" width="150px;" class="pe-image-documentation"/>
+    <img src="/img/pipeline-elements/org.apache.streampipes.processors.enricher.jvm.processor.expression/icon.png" width="150px;" class="pe-image-documentation"/>
 </p>
 
 ***
 
 ## Description
-This adapter continuously provides the current bitcoin price from the Coindesk API.
-
-## Configuration
-
-### Currency
-
-The current in which the price should be provided.
-
+A pipeline element that evaluates Math expressions using the Apache Commons JEXL library.
 
 ***
 
+## Required input
+This processor works with any input stream that contains numerical values.
+
+***
+
+## Configuration
+A math expression can be defined using the JEXL syntax (see https://commons.apache.org/proper/commons-jexl/index.html).
+
+Example:
+
+```
+flow_rate*2
+```
+
+It is also possible to use methods from `java.lang.Math`:
+
+```
+Math.pow(flow_rate^2)
+```
+
+All fields from th einput stream are available as variables.
+
+## Output
+For each expression, an additional field is created in the output stream. Field names are user-defined.
