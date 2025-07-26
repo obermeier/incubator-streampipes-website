@@ -40,8 +40,8 @@
         <link rel="next" href="../data_stream_context/">
       
       
-      <link rel="icon" href="https://streampipes.apache.org/img/favicon/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <link rel="icon" href="https://streampipes.apache.org/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.2">
     
     
       
@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.30068a00.min.css">
       
         
         <link rel="stylesheet" href="../../../../assets/stylesheets/palette.85d0ee34.min.css">
@@ -236,6 +236,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -556,6 +558,10 @@
       
         
       
+        
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -655,6 +661,46 @@
   
   <span class="md-ellipsis">
     Using Online Machine Learning on a StreamPipes data stream
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/5-applying-interoperable-machine-learning-in-streampipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applying Interoperable Machine Learning in StreamPipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../tutorials/6-streampipes-function-output-stream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating Output Streams with StreamPipes Functions
   </span>
   
 
@@ -1654,7 +1700,7 @@
       
         <li class="md-nav__item">
   <a href="#streampipes.functions.utils.async_iter_handler" class="md-nav__link">
-    streampipes.functions.utils.async_iter_handler
+    async_iter_handler
   </a>
   
 </li>
@@ -1669,14 +1715,14 @@
         
           <li class="md-nav__item">
   <a href="#streampipes.functions.utils.async_iter_handler.AsyncIterHandler.anext" class="md-nav__link">
-    anext()
+    anext
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#streampipes.functions.utils.async_iter_handler.AsyncIterHandler.combine_async_messages" class="md-nav__link">
-    combine_async_messages()
+    combine_async_messages
   </a>
   
 </li>
@@ -2226,7 +2272,7 @@
       
         <li class="md-nav__item">
   <a href="#streampipes.functions.utils.async_iter_handler" class="md-nav__link">
-    streampipes.functions.utils.async_iter_handler
+    async_iter_handler
   </a>
   
 </li>
@@ -2241,14 +2287,14 @@
         
           <li class="md-nav__item">
   <a href="#streampipes.functions.utils.async_iter_handler.AsyncIterHandler.anext" class="md-nav__link">
-    anext()
+    anext
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#streampipes.functions.utils.async_iter_handler.AsyncIterHandler.combine_async_messages" class="md-nav__link">
-    combine_async_messages()
+    combine_async_messages
   </a>
   
 </li>
@@ -2273,6 +2319,11 @@
                   
 
   
+    <a href="https://github.com/apache/streampipes/blob/dev/streampipes-client-python/docs/streampipes/functions/utils/async_iter_handler.py" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
   
 
 
@@ -2281,10 +2332,11 @@
 <div class="doc doc-object doc-module">
 
 
-<a id="streampipes.functions.utils.async_iter_handler"></a>
-  <div class="doc doc-contents first">
 
-  
+<a id="streampipes.functions.utils.async_iter_handler"></a>
+    <div class="doc doc-contents first">
+
+
 
   <div class="doc doc-children">
 
@@ -2300,19 +2352,19 @@
 
 
 <h2 id="streampipes.functions.utils.async_iter_handler.AsyncIterHandler" class="doc doc-heading">
-          <code>AsyncIterHandler</code>
+            <code>AsyncIterHandler</code>
 
 
 <a href="#streampipes.functions.utils.async_iter_handler.AsyncIterHandler" class="headerlink" title="Permanent link">&para;</a></h2>
 
 
-  <div class="doc doc-contents ">
+    <div class="doc doc-contents ">
 
-  
+
       <p>Handles asynchronous iterators to get every message after another in parallel.</p>
 
 
-  
+
 
   <div class="doc doc-children">
 
@@ -2324,14 +2376,12 @@
 
 
 
-
 <div class="doc doc-object doc-function">
 
 
-
 <h3 id="streampipes.functions.utils.async_iter_handler.AsyncIterHandler.anext" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">anext</span><span class="p">(</span><span class="n">stream_id</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span></code>
-  
+            <code class="highlight language-python"><span class="n">anext</span><span class="p">(</span><span class="n">stream_id</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span></code>
+
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-async"><code>async</code></small>
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -2340,92 +2390,88 @@
 <a href="#streampipes.functions.utils.async_iter_handler.AsyncIterHandler.anext" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
-  <div class="doc doc-contents ">
-  
+    <div class="doc doc-contents ">
+
       <p>Gets the next message from an AsyncIterator.</p>
 
 
-
-  <table>
-    <thead>
-      <tr>
-        <th><b>PARAMETER</b></th>
-        <th><b> DESCRIPTION</b></th>
-      </tr>
-    </thead>
-    <tbody>
+<table>
+      <thead>
         <tr>
-          <td><code>stream_id</code></td>
-          <td class="doc-param-details">
-            <div class="doc-md-description">
-              <p>The id of the data stream which the message belongs to.</p>
-            </div>
-            <p>
-                <span class="doc-param-annotation">
-                  <b>TYPE:</b>
-                    <code>str</code>
-                </span>
-            </p>
-          </td>
+          <th><span class="doc-section-title">PARAMETER</span></th>
+          <th><span>DESCRIPTION</span></th>
         </tr>
-        <tr>
-          <td><code>message</code></td>
-          <td class="doc-param-details">
-            <div class="doc-md-description">
-              <p>An asynchronous iterator that contains the messages.</p>
-            </div>
-            <p>
-                <span class="doc-param-annotation">
-                  <b>TYPE:</b>
-                    <code><span title="typing.AsyncIterator">AsyncIterator</span></code>
-                </span>
-            </p>
-          </td>
-        </tr>
-    </tbody>
-  </table>
-
-
-
-  <table>
-    <thead>
-      <tr>
-        <th><b>RETURNS</b></th>
-        <th><b>DESCRIPTION</b></th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-              <code>result</code>
-          </td>
-          <td class="doc-returns-details">
-            <div class="doc-md-description">
-              <p>Tuple of the stream id und next message or <code>("stop", None)</code> if no message is left.</p>
-            </div>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>stream_id</code></td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>The id of the data stream which the message belongs to.</p>
+              </div>
               <p>
-                <span class="doc-returns-annotation">
-                  <b>TYPE:</b>
-                    <code><span title="typing.Tuple">Tuple</span>[str, Optional[<span title="typing.Any">Any</span>]]</code>
-                </span>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="str">str</span></code>
+                  </span>
               </p>
-          </td>
-        </tr>
-    </tbody>
-  </table>
+            </td>
+          </tr>
+          <tr class="doc-section-item">
+            <td><code>message</code></td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>An asynchronous iterator that contains the messages.</p>
+              </div>
+              <p>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.AsyncIterator">AsyncIterator</span></code>
+                  </span>
+              </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
-  </div>
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">RETURNS</span></th>
+          <th><span>DESCRIPTION</span></th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>result</code>
+            </td>
+            <td class="doc-returns-details">
+              <div class="doc-md-description">
+                <p>Tuple of the stream id und next message or <code>("stop", None)</code> if no message is left.</p>
+              </div>
+                <p>
+                  <span class="doc-returns-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Tuple">Tuple</span>[<span title="str">str</span>, <span title="Optional">Optional</span>[<span title="typing.Any">Any</span>]]</code>
+                  </span>
+                </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+    </div>
 
 </div>
-
 
 <div class="doc doc-object doc-function">
 
 
-
 <h3 id="streampipes.functions.utils.async_iter_handler.AsyncIterHandler.combine_async_messages" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">combine_async_messages</span><span class="p">(</span><span class="n">messages</span><span class="p">)</span></code>
-  
+            <code class="highlight language-python"><span class="n">combine_async_messages</span><span class="p">(</span><span class="n">messages</span><span class="p">)</span></code>
+
   <span class="doc doc-labels">
       <small class="doc doc-label doc-label-async"><code>async</code></small>
       <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
@@ -2434,67 +2480,65 @@
 <a href="#streampipes.functions.utils.async_iter_handler.AsyncIterHandler.combine_async_messages" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
-  <div class="doc doc-contents ">
-  
+    <div class="doc doc-contents ">
+
       <p>Continuously gets the next published message from multiple AsyncIterators in parallel.</p>
 
 
-
-  <table>
-    <thead>
-      <tr>
-        <th><b>PARAMETER</b></th>
-        <th><b> DESCRIPTION</b></th>
-      </tr>
-    </thead>
-    <tbody>
+<table>
+      <thead>
         <tr>
-          <td><code>messages</code></td>
-          <td class="doc-param-details">
-            <div class="doc-md-description">
-              <p>A dictionary with an asynchronous iterator for every stream id.</p>
-            </div>
-            <p>
-                <span class="doc-param-annotation">
-                  <b>TYPE:</b>
-                    <code><span title="typing.Dict">Dict</span>[str, <span title="typing.AsyncIterator">AsyncIterator</span>]</code>
-                </span>
-            </p>
-          </td>
+          <th><span class="doc-section-title">PARAMETER</span></th>
+          <th><span>DESCRIPTION</span></th>
         </tr>
-    </tbody>
-  </table>
-
-
-
-  <table>
-    <thead>
-      <tr>
-        <th><b>YIELDS</b></th>
-        <th><b>DESCRIPTION</b></th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-              <code>message</code>
-          </td>
-          <td class="doc-yields-details">
-            <div class="doc-md-description">
-              <p>Description of the anonymous integer return value.</p>
-            </div>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td><code>messages</code></td>
+            <td class="doc-param-details">
+              <div class="doc-md-description">
+                <p>A dictionary with an asynchronous iterator for every stream id.</p>
+              </div>
               <p>
-                <span class="doc-yields-annotation">
-                  <b>TYPE::</b>
-                    <code><span title="typing.Tuple">Tuple</span>[str, <span title="typing.Any">Any</span>]</code>
-                </span>
+                  <span class="doc-param-annotation">
+                    <b>TYPE:</b>
+                      <code><span title="typing.Dict">Dict</span>[<span title="str">str</span>, <span title="typing.AsyncIterator">AsyncIterator</span>]</code>
+                  </span>
               </p>
-          </td>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+<table>
+      <thead>
+        <tr>
+          <th><span class="doc-section-title">YIELDS</span></th>
+          <th><span>DESCRIPTION</span></th>
         </tr>
-    </tbody>
-  </table>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>message</code>
+            </td>
+            <td class="doc-yields-details">
+              <div class="doc-md-description">
+                <p>Description of the anonymous integer return value.</p>
+              </div>
+                <p>
+                  <span class="doc-yields-annotation">
+                    <b>TYPE::</b>
+                      <code><span title="typing.Tuple">Tuple</span>[<span title="str">str</span>, <span title="typing.Any">Any</span>]</code>
+                  </span>
+                </p>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
-  </div>
+    </div>
 
 </div>
 
@@ -2502,7 +2546,7 @@
 
   </div>
 
-  </div>
+    </div>
 
 </div>
 
@@ -2511,8 +2555,19 @@
 
   </div>
 
-  </div>
+    </div>
 
+</div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="July 26, 2025 02:35:20">July 26, 2025</span>
+      
+    
+  </small>
 </div>
 
 
@@ -2572,7 +2627,7 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking"], "search": "../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.edit", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking", "search.suggest"], "search": "../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../../../assets/javascripts/bundle.dff1b7c8.min.js"></script>

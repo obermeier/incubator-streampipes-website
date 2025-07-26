@@ -40,8 +40,8 @@
         <link rel="next" href="../2-extracting-data-from-the-streampipes-data-lake/">
       
       
-      <link rel="icon" href="https://streampipes.apache.org/img/favicon/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+      <link rel="icon" href="https://streampipes.apache.org/img/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.2">
     
     
       
@@ -49,7 +49,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.30068a00.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.85d0ee34.min.css">
@@ -236,6 +236,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -556,6 +558,10 @@
       
         
       
+        
+      
+        
+      
     
     
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
@@ -723,6 +729,46 @@
   
   <span class="md-ellipsis">
     Using Online Machine Learning on a StreamPipes data stream
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-applying-interoperable-machine-learning-in-streampipes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Applying Interoperable Machine Learning in StreamPipes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../6-streampipes-function-output-stream/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Creating Output Streams with StreamPipes Functions
   </span>
   
 
@@ -2261,6 +2307,11 @@
                   
 
   
+    <a href="https://github.com/apache/streampipes/blob/dev/streampipes-client-python/docs/tutorials/1-introduction-to-streampipes-python-client.ipynb" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
   
 
 
@@ -3272,6 +3323,7 @@ Licensed under the Apache License, Version 2.0.
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -3292,9 +3344,9 @@ Licensed under the Apache License, Version 2.0.
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Introduction-to-StreamPipes-Python">Introduction to StreamPipes Python<a class="anchor-link" href="#Introduction-to-StreamPipes-Python">¶</a></h1><h3 id="Why-there-is-an-extra-Python-library-for-StreamPipes?">Why there is an extra Python library for StreamPipes?<a class="anchor-link" href="#Why-there-is-an-extra-Python-library-for-StreamPipes?">¶</a></h3><p><a href="https://streampipes.apache.org/">Apache StreamPipes</a> aims to enable non-technical users to connect and analyze IoT data streams.
-To this end, it provides an easy-to-use and convenient user interface that allows one to connect to an IoT data source and create some visual
+To achieve this, it provides an easy-to-use and convenient user interface that allows one to connect to an IoT data source and create some visual
 graphs within a few minutes. <br/>
-Although this is the main use case of Apache StreamPipes, it can also provide great value for people who are eager to work on data analysis or data science with IoT data, but don't we do get in touch with all the hassle associated with extracting data from devices in a suitable format.
+While this is the primary use case for Apache StreamPipes, it also offers significant value to those interested in data analysis or data science with IoT data, without the need to handle the complexities of extracting data from devices in a suitable format.
 In this scenario, StreamPipes helps you connect to your data source and extract the data for you.
 You then can make the data available outside StreamPipes by writing it into an external source, such as a database, Kafka, etc.
 While this requires another component, you can also extract your data directly from StreamPipes programmatically using the StreamPipes API.
@@ -3405,7 +3457,7 @@ Specifically with StreamPipes Python, we want to address the amazing data analyt
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="How-to-configure-the-Python-client">How to configure the Python client<a class="anchor-link" href="#How-to-configure-the-Python-client">¶</a></h3><p>In order to access the resources available in StreamPipes, one must be able to authenticate against the backend.
-For this purpose, the client sofar only supports the authentication via an API token that can be generated via the StreamPipes UI, as you see below.</p>
+For this purpose, the client so far only supports the authentication via an API token that can be generated via the StreamPipes UI, as you can see below.</p>
 <p><img alt="how-to-get-api-key" src="https://raw.githubusercontent.com/apache/streampipes/dev/streampipes-client-python/docs/img/how-to-get-api-key.gif"/></p>
 <br/>
 <p>Having generated the API token, one can directly start initializing a client instance as follows:</p>
@@ -3431,9 +3483,9 @@ For this purpose, the client sofar only supports the authentication via an API t
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">streampipes.client</span> <span class="kn">import</span> <span class="n">StreamPipesClient</span>
-<span class="kn">from</span> <span class="nn">streampipes.client.config</span> <span class="kn">import</span> <span class="n">StreamPipesClientConfig</span>
-<span class="kn">from</span> <span class="nn">streampipes.client.credential_provider</span> <span class="kn">import</span> <span class="n">StreamPipesApiKeyCredentials</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">streampipes.client</span><span class="w"> </span><span class="kn">import</span> <span class="n">StreamPipesClient</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">streampipes.client.config</span><span class="w"> </span><span class="kn">import</span> <span class="n">StreamPipesClientConfig</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">streampipes.client.credential_provider</span><span class="w"> </span><span class="kn">import</span> <span class="n">StreamPipesApiKeyCredentials</span>
 </pre></div>
 <div class="clipboard-copy-txt" id="cell-3">from streampipes.client import StreamPipesClient
 from streampipes.client.config import StreamPipesClientConfig
@@ -3535,7 +3587,7 @@ To do so, you must initialize the credential provider like the following:</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>To ensure that the above code works, you must set the environment variables as expected.
-This can be done like following:</p>
+This can be done as follows:</p>
 </div>
 </div>
 </div>
@@ -3558,11 +3610,14 @@ This can be done like following:</p>
 </div>
 </clipboard-copy>
 </div>
-<div class="highlight-ipynb hl-python"><pre><span></span><span class="o">%</span><span class="n">export</span> <span class="n">SP_USERNAME</span><span class="o">=</span><span class="s2">"&lt;USERNAME&gt;"</span>
-<span class="o">%</span><span class="n">export</span> <span class="n">SP_API_KEY</span><span class="o">=</span><span class="s2">"&lt;API-KEY&gt;"</span>
+<div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"SP_USERNAME"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"admin@streampipes.apache.org"</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s2">"SP_API_KEY"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"XXX"</span>
 </pre></div>
-<div class="clipboard-copy-txt" id="cell-6">%export SP_USERNAME="<username>"
-%export SP_API_KEY="<api-key>"</api-key></username></div>
+<div class="clipboard-copy-txt" id="cell-6">import os
+os.environ["SP_USERNAME"] = "admin@streampipes.apache.org"
+os.environ["SP_API_KEY"] = "XXX"
+</div>
 </div>
 </div>
 </div>
@@ -3689,6 +3744,17 @@ We'll read and react to them all, we promise!</p>
 </div>
 
 
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="June 18, 2024 20:36:12">June 18, 2024</span>
+      
+    
+  </small>
+</div>
+
 
   
 
@@ -3746,7 +3812,7 @@ We'll read and react to them all, we promise!</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.code.copy", "navigation.tabs", "navigation.tabs.sticky", "navigation.instant", "navigation.indexes", "navigation.tracking", "search.suggest"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
